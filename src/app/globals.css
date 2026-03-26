@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-electric-gold: #e8c547;
+  --color-electric-gold-dark: #c9a832;
+  --color-electric-gold-light: #f5e6a3;
+  --color-dark-900: #0f1114;
+  --color-dark-800: #181b20;
+  --color-dark-700: #1e2228;
+  --color-dark-600: #2a2e35;
+  --color-dark-500: #3a3f48;
+  --color-grey-700: #3d4250;
+  --color-grey-600: #4b5163;
+  --color-grey-500: #5c6478;
+  --color-grey-400: #7a839a;
+  --color-grey-300: #9ca3b8;
+  --color-slate-400: #94a3b8;
+  --color-slate-300: #cbd5e1;
+  --font-heading: "Georgia", serif;
+  --font-body: "Segoe UI", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-dark-900);
+  color: #e2e8f0;
+}
+
+/* Electric glow effect */
+.electric-glow {
+  text-shadow: 0 0 10px rgba(232, 197, 71, 0.35), 0 0 20px rgba(232, 197, 71, 0.15);
+}
+
+.electric-border {
+  box-shadow: 0 0 10px rgba(232, 197, 71, 0.1), inset 0 0 10px rgba(232, 197, 71, 0.03);
+}
+
+/* Animated lightning bolt underline */
+.lightning-underline {
+  position: relative;
+}
+
+.lightning-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-electric-gold), transparent);
+  transition: width 0.3s ease;
+}
+
+.lightning-underline:hover::after {
+  width: 100%;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-electric-gold), #d4d4d4, var(--color-electric-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px rgba(232, 197, 71, 0.08), 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero parallax background */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up-delay {
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-2 {
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}

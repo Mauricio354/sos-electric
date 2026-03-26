@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir C:Usersmrosassos-electric)",
+      "Bash(command -v ls)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(echo $PATH)",
+      "Bash(\"/c/Program Files/nodejs/npx\" create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(node -e \"console.log\\(''hello''\\)\")",
+      "Bash(node -e \"const { execSync } = require\\(''child_process''\\); const r = execSync\\(''npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias @/* --use-npm --no-turbopack'', { stdio: ''pipe'', cwd: ''C:/Users/mrosas/sos-electric'', timeout: 180000 }\\); console.log\\(r.toString\\(\\)\\)\")",
+      "Bash(node -e \"const { execSync } = require\\(''child_process''\\); const r = execSync\\(''npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias @/* --use-npm --no-turbopack --no-react-compiler'', { stdio: ''pipe'', cwd: ''C:/Users/mrosas/sos-electric'', timeout: 180000 }\\); console.log\\(r.toString\\(\\)\\)\")",
+      "Bash(node -e \"const fs = require\\(''fs''\\); console.log\\(fs.readdirSync\\(''C:/Users/mrosas/sos-electric''\\).join\\(''\\\\n''\\)\\)\")",
+      "Bash(node -e \"const {execSync} = require\\(''child_process''\\); try { const r = execSync\\(''npx next build'', {cwd: ''C:/Users/mrosas/sos-electric'', timeout: 180000, stdio: ''pipe''}\\); console.log\\(r.toString\\(\\).slice\\(-2000\\)\\); } catch\\(e\\) { console.log\\(''STDERR:'', e.stderr?.toString\\(\\).slice\\(-3000\\)\\); console.log\\(''STDOUT:'', e.stdout?.toString\\(\\).slice\\(-2000\\)\\); }\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(node -e \"const fs = require\\(''fs''\\); fs.mkdirSync\\(''C:/Users/mrosas/sos-electric/public/logo'', {recursive: true}\\); fs.copyFileSync\\(''C:/Users/mrosas/sos-electric/assets/vector/isolated-monochrome-white.svg'', ''C:/Users/mrosas/sos-electric/public/logo/sos-text-white.svg''\\); fs.copyFileSync\\(''C:/Users/mrosas/sos-electric/assets/vector/default.svg'', ''C:/Users/mrosas/sos-electric/public/logo/sos-full.svg''\\); fs.copyFileSync\\(''C:/Users/mrosas/sos-electric/assets/default.png'', ''C:/Users/mrosas/sos-electric/public/logo/sos-default.png''\\); console.log\\(''done''\\);\")",
+      "Bash(node -e \"const {execSync} = require\\(''child_process''\\); const cwd = ''C:/Users/mrosas/sos-electric''; console.log\\(execSync\\(''git status'', {cwd}\\).toString\\(\\)\\);\")",
+      "Bash(node -e \"const {execSync} = require\\(''child_process''\\); const cwd = ''C:/Users/mrosas/sos-electric''; console.log\\(execSync\\(''git add -A'', {cwd}\\).toString\\(\\)\\); console.log\\(execSync\\(''git status --short'', {cwd}\\).toString\\(\\)\\);\")"
+    ]
+  }
+}
