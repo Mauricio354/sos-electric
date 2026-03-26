@@ -31,9 +31,8 @@ export default function Navbar() {
             <Image
               src="/logo/sos-text-white.svg"
               alt="SOS Electric"
-              width={160}
-              height={20}
-              className="hidden sm:block"
+              width={140}
+              height={18}
             />
           </Link>
 
